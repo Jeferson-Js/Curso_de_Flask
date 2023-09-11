@@ -1,0 +1,18 @@
+O Flask é um framework de desenvolvimento web em Python que permite criar aplicações web de forma simples e rápida. Ele fornece ferramentas para lidar com rotas, solicitações HTTP e respostas, facilitando a criação de aplicativos web dinâmicos e escaláveis. Flask é conhecido por sua simplicidade e flexibilidade, permitindo aos desenvolvedores escolher e integrar bibliotecas e componentes conforme necessário para atender aos requisitos do projeto.
+
+
+Netflix: Utiliza o Flask para criar ferramentas internas e aplicações de gerenciamento.
+
+LinkedIn: Usou o Flask em algumas de suas aplicações web.
+
+Pinterest: Utiliza o Flask para várias partes de sua infraestrutura de back-end.
+
+Reddit: O Reddit, em sua versão inicial, foi desenvolvido com o Flask.
+
+Airbnb: Usou o Flask em algumas partes de seu sistema.
+
+NASA: Utiliza o Flask para construir ferramentas e aplicativos internos.
+
+Twilio: Usou o Flask para construir várias aplicações.
+
+Mozilla: Algumas das aplicações internas da Mozilla foram desenvolvidas com Flask.
