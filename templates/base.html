@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Base {% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename="css/tailwind.css")}}">
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/python.png')}}" type="image/x-icon">
+    <script src="{{url_for('static', filename="js/main.js")}}" defer></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+    <header class="flex">
+        <nav class="flex justify-between items-center w-full h-16 px-3 shadow-lg fixed">
+            <span class="flex items-center gap-2">
+                <a href="/">
+                    <img src="{{url_for('static', filename='img/python.png')}}" alt="python" class="w-12 h-12">
+                </a>
+                <h2 class="lg:text-lg md:text-base text-sm">Flask</h2>
+            </span>
+            <button class="lg:hidden outline-none text-2xl flex items-center ml-auto">
+                <ion-icon name="menu" onclick="btnMobile(this)"></ion-icon>
+            </button>
+            <!-- Lista desktop -->
+            <ul class="hidden lg:flex lg:items-center lg:gap-3">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <!-- Lista Mobile -->
+            <div class="lg:hidden md:hidden">
+                <ul class="hidden absolute top-16 left-0 w-full h-44 bg-white shadow-md" id="list">
+                    <li class="m-5"><a href="/home">Home</a></li>
+                    <li class="m-5"><a href="/about">About</a></li>
+                    <li class="m-5"><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+  {% block content %}
+
+  {% endblock %}
+  <p>Footer</p>
+</body>
+</html>
