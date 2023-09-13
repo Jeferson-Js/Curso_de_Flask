@@ -16,16 +16,16 @@
                 <a href="/">
                     <img src="{{url_for('static', filename='img/python.png')}}" alt="python" class="w-12 h-12">
                 </a>
-                <h2 class="lg:text-lg md:text-base text-sm">Flask</h2>
+                <h2 class="lg:text-lg md:text-base text-sm text-white">Flask</h2>
             </span>
-            <button class="lg:hidden outline-none text-2xl flex items-center ml-auto">
+            <button class="lg:hidden outline-none text-2xl text-white flex items-center ml-auto">
                 <ion-icon name="menu" onclick="btnMobile(this)"></ion-icon>
             </button>
             <!-- Lista desktop -->
             <ul class="hidden lg:flex lg:items-center lg:gap-3">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li class="text-white"><a href="/home">Home</a></li>
+                <li class="text-white"><a href="/about">About</a></li>
+                <li class="text-white"><a href="/contact">Contact</a></li>
             </ul>
             <!-- Lista Mobile -->
             <div class="lg:hidden md:hidden">
@@ -40,6 +40,22 @@
   {% block content %}
 
   {% endblock %}
-  <p>Footer</p>
+    <footer class="bg-gray-100 w-full h-32 overflow-x-hidden">
+        <p class="text-center py-2 font-semibold animate-pulse">Copyright &copy; All rights reservd.</p>
+        <div>
+            <hr class="bg-gray-500 w-full h-1 m-3">
+            <ul class="flex lg:justify-end md:justify-end justify-center px-3 gap-3">
+                <li><a href="">
+                    <img src="{{url_for('static', filename='img/github.png')}}" alt="github" class="w-11 h-11">
+                </a></li>
+                <li><a href="">
+                    <img src="{{url_for('static', filename='img/whatsapp.png')}}" alt="whatsapp" class="w-11 h-11">
+                </a></li>
+                <li><a href="">
+                    <img src="{{url_for('static', filename='img/linkedin.png')}}" alt="linkedin" class="w-11 h-11">
+                </a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
